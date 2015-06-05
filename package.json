@@ -1,0 +1,39 @@
+{
+  "name": "romansalin.com",
+  "description": "romansalin.com blog",
+  "author": "Roman Salin",
+  "version": "0.0.1",
+  "main": "./server.js",
+  "repository": "git://github.com/romansalin/romansalin.com.git",
+  "homepage": "http://romansalin.com",
+  "license": "MIT",
+  "keywords": [],
+  "tags": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/madhums/node-express-mongoose-demo.git"
+  },
+  "engines": {
+    "node": "0.12.4"
+  },
+  "scripts": {
+    "start": "NODE_PATH=./config:./app/controllers NODE_ENV=development ./node_modules/.bin/nodemon server.js",
+    "test": "NODE_PATH=./config:./app/controllers NODE_ENV=test ./node_modules/.bin/mocha --reporter spec --timeout 10000 test/test-*.js"
+  },
+  "dependencies": {
+    "markdown": "*",
+    "gulp": "*",
+    "gulp-uglify": "*",
+    "gulp-concat": "*",
+    "express": "*",
+    "path": "*",
+    "serve-favicon": "*",
+    "morgan": "*",
+    "cookie-parser": "*",
+    "body-parser": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "nodemon": "*"
+  }
+}
